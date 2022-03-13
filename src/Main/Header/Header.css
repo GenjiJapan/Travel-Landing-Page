@@ -1,0 +1,26 @@
+.header_container{
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+    height: 50px;
+
+    background: #000;
+    z-index: 10;
+}
+
+.header_indicator{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    background: red;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
