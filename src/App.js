@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "./assets/Styles/GlobalStyles.css";
 import { Index } from "./Main";
 
 function App() {
