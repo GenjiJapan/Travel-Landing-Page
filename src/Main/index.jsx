@@ -1,7 +1,7 @@
 import React from "react";
+import { AboutUs } from "./AboutUs";
 import { Banner } from "./Banner";
 import { Header } from "./Header";
-import { ImageSlider } from "./ImageSlider";
 import { Reason } from "./Reason";
 
 export const Index = () => {
@@ -10,7 +10,7 @@ export const Index = () => {
       <Header />
       <Banner />
       <Reason />
-      {/* <ImageSlider /> */}
+      <AboutUs />
     </div>
   );
 };
