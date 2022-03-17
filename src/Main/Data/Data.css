@@ -1,0 +1,69 @@
+.data_container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 300px;
+  /* background: #000; */
+  margin: 0 auto;
+  padding: 0 8em;
+}
+
+.data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 200px;
+  /* background: red; */
+}
+
+.data .data_number {
+  width: 200px;
+  font-size: 6em;
+  color: #f5e3cf;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  /* background: #000; */
+  border-bottom: 1px solid #a18775;
+  text-align: center;
+}
+
+.data .data_name {
+  padding-top: 0.5em;
+  font-size: 1.5em;
+  color: #f5e3cf;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.parallax {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  box-shadow: 5px 5px 5px #3f2317, -5px -5px 5px #552f1f;
+}
+
+.parallax img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.parallax button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 50px;
+  background: #f45713;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}

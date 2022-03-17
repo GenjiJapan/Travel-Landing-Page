@@ -1,4 +1,5 @@
 import cappadocia from "../assets/Images/cappadocia.avif";
+import cappadocia2 from "../assets/Images/cappadocia2.avif";
 import logo from "../assets/Images/logo.jpg";
 import london from "../assets/Images/london.jpg";
 import lourve from "../assets/Images/lourve.jpg";
@@ -22,5 +23,6 @@ export default [
 
 export const Images = {
   CAPPADOCIA: cappadocia,
+  CAPPADOCIA2: cappadocia2,
   LOGO: logo,
 };
