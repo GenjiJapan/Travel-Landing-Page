@@ -21,6 +21,42 @@ export default [
   vungtau,
 ];
 
+export const photoArr = [
+  {
+    id: 1,
+    img: london,
+  },
+  {
+    id: 2,
+    img: lourve,
+  },
+  {
+    id: 3,
+    img: lourve2,
+  },
+  {
+    id: 4,
+    img: muine,
+  },
+  {
+    id: 5,
+    img: palais,
+  },
+  {
+    id: 6,
+    img: thailan,
+  },
+
+  {
+    id: 7,
+    img: cappadocia,
+  },
+  {
+    id: 8,
+    img: cappadocia2,
+  },
+];
+
 export const Images = {
   CAPPADOCIA: cappadocia,
   CAPPADOCIA2: cappadocia2,
