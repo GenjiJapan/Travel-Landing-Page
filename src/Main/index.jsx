@@ -2,6 +2,7 @@ import React from "react";
 import { AboutUs } from "./AboutUs";
 import { Banner } from "./Banner";
 import { Data } from "./Data";
+import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { Photos } from "./Photo";
 import { Reason } from "./Reason";
@@ -17,6 +18,7 @@ export const Index = () => {
       <Data />
       <WhyUs />
       <Photos />
+      <Footer />
     </div>
   );
 };

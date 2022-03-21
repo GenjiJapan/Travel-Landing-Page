@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import { motion, AnimateSharedLayout } from "framer-motion";
-
+import { AnimateSharedLayout, motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { photoArr } from "../../constants/images";
 import "./Photos.css";
 
-function Content({ day, disabled }) {
+function Content({ img, disabled }) {
   return (
     <motion.h1
       className="title"
       layoutId="title"
       style={{ opacity: disabled ? 0.2 : 1 }}
     >
-      {day}
+      <motion.img className="title_img" src={img} alt="" />
     </motion.h1>
   );
 }
@@ -50,7 +50,7 @@ function CompactCard({ children, onExpand, disabled }) {
   );
 }
 
-function DateButton({ day, onCollapse, onExpand, disabled }) {
+function DateButton({ img, onCollapse, onExpand, disabled }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const collapseDate = () => {
@@ -67,12 +67,12 @@ function DateButton({ day, onCollapse, onExpand, disabled }) {
     <div className="card-container">
       <AnimateSharedLayout>
         {isExpanded ? (
-          <ExpandedCard onCollapse={collapseDate} day={day}>
-            <Content day={day} disabled={disabled} />
+          <ExpandedCard onCollapse={collapseDate} img={img}>
+            <Content img={img} disabled={disabled} />
           </ExpandedCard>
         ) : (
-          <CompactCard onExpand={expandDate} disabled={disabled} day={day}>
-            <Content day={day} disabled={disabled} />
+          <CompactCard onExpand={expandDate} disabled={disabled} img={img}>
+            <Content img={img} disabled={disabled} />
           </CompactCard>
         )}
       </AnimateSharedLayout>
@@ -83,17 +83,22 @@ function DateButton({ day, onCollapse, onExpand, disabled }) {
 export const Photos = () => {
   const [expandedDay, setCollapsedDay] = useState();
   const days = [25, 26, 27, 28, 29];
+  const [imgList, setImgList] = useState([]);
 
+  useEffect(() => {
+    setImgList(photoArr);
+    console.log("🚀 ~ file: index.jsx ~ line 7 ~ Photos ~ imgList", imgList);
+  }, [photoArr, imgList]);
   return (
-    <div className="container">
-      <p>Click on a date to see the expanded view.</p>
+    <div className="photo_container">
+      <h1>Photo Impression</h1>
       <div className="dates">
-        {days.map((day) => (
+        {imgList.map((img) => (
           <DateButton
-            key={day}
-            day={day}
-            disabled={expandedDay !== day && expandedDay !== undefined}
-            onExpand={() => setCollapsedDay(day)}
+            key={img}
+            img={img.img}
+            disabled={expandedDay !== img && expandedDay !== undefined}
+            onExpand={() => setCollapsedDay(img)}
             onCollapse={() => setCollapsedDay()}
           />
         ))}

@@ -74,7 +74,7 @@
   font-weight: 700;
 }
 
-.reason_detail_line {
+.reason_detail .reason_detail_line {
   position: absolute;
   top: 15em;
   left: -8.85em;

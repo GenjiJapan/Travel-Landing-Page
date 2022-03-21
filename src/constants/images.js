@@ -42,19 +42,19 @@ export const photoArr = [
     id: 5,
     img: palais,
   },
-  {
-    id: 6,
-    img: thailan,
-  },
+  // {
+  //   id: 6,
+  //   img: thailan,
+  // },
 
-  {
-    id: 7,
-    img: cappadocia,
-  },
-  {
-    id: 8,
-    img: cappadocia2,
-  },
+  // {
+  //   id: 7,
+  //   img: cappadocia,
+  // },
+  // {
+  //   id: 8,
+  //   img: cappadocia2,
+  // },
 ];
 
 export const Images = {
