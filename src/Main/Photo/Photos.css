@@ -1,7 +1,7 @@
 .photo_container {
   position: relative;
   width: 90%;
-  height: 300px;
+  height: 600px;
   margin: 3em auto 0 auto;
   /* background: #fff; */
   font-family: sans-serif;
@@ -30,24 +30,25 @@
   color: navy;
   font-weight: 800;
   margin: 0;
-  /* background: #000; */
+  background: #000;
   width: 100%;
   height: 100%;
 }
 
-.title img {
+.title .title_img {
   width: 100%;
   height: 100%;
-  border-radius: 1em;
+  border-radius: 1rem;
   object-fit: cover;
 }
 
 .card-container {
-  width: 3em;
-  height: 3em;
+  width: 3rem;
+  height: 3rem;
   position: relative;
-  margin-left: 5em;
-  margin-right: 5em;
+  /* margin-left: 5rem; */
+  margin-right: 15rem;
+  /* background: #000; */
 }
 
 .card {
@@ -65,11 +66,11 @@
 }
 
 .expanded {
-  width: 10em;
-  height: 10em;
+  width: 22rem;
+  height: 22rem;
   background-color: navy;
   position: relative;
-  left: 150%;
+  left: -100%;
   top: 150%;
 }
 
@@ -79,20 +80,19 @@
   padding: 0.5rem;
   justify-content: center;
   width: 8rem;
-  margin-left: 1rem;
+  margin-left: 4.2rem;
 }
 
 .compact {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 10em;
-  height: 10em;
-  padding: 0.5em;
-  border-radius: 1em;
+  width: 15rem;
+  height: 15rem;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
 }
 
 .expanded .title {
+  width: 100%;
+  height: 100%;
   font-size: 5em;
   color: white;
 }

@@ -32,7 +32,7 @@ function ExpandedCard({ children, onCollapse }) {
         initial={{ opacity: 0, top: "6rem" }}
         animate={{ opacity: 1, top: "3rem" }}
       >
-        Today is clear
+        Detail Page Page Page
       </motion.p>
     </>
   );
@@ -82,7 +82,6 @@ function DateButton({ img, onCollapse, onExpand, disabled }) {
 
 export const Photos = () => {
   const [expandedDay, setCollapsedDay] = useState();
-  const days = [25, 26, 27, 28, 29];
   const [imgList, setImgList] = useState([]);
 
   useEffect(() => {
@@ -106,32 +105,3 @@ export const Photos = () => {
     </div>
   );
 };
-
-// import React, { useEffect, useState } from "react";
-// import { photoArr } from "../../constants/images";
-// import "./Photos.css";
-
-// export const Photos = () => {
-//   const [imgList, setImgList] = useState([]);
-
-//   useEffect(() => {
-//     setImgList(photoArr);
-//     console.log("🚀 ~ file: index.jsx ~ line 7 ~ Photos ~ imgList", imgList);
-//   }, [photoArr, imgList]);
-
-//   return (
-//     <div className="photos_container">
-
-//       <ul>
-//         {imgList &&
-//           imgList.map((item, key) => {
-//             return (
-//               <li key={key} className="column">
-//                 <img src={item.img} alt="" />
-//               </li>
-//             );
-//           })}
-//       </ul>
-//     </div>
-//   );
-// };

@@ -1,8 +1,15 @@
+import {
+  faFacebook,
+  faGithub,
+  faInstagram,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { faCircle } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TextField } from "@mui/material";
 import React from "react";
 import "./Footer.css";
-import { faCircle } from "@fortawesome/free-regular-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Footer = () => {
   return (
@@ -13,6 +20,7 @@ export const Footer = () => {
             Please leave your feedback to our project for better services
           </h3>
           <TextField
+            multiline
             InputLabelProps={{ className: "content__label" }}
             className="content"
             id="standard-basic"
@@ -20,6 +28,7 @@ export const Footer = () => {
             variant="standard"
           />
           <TextField
+            multiline
             InputLabelProps={{ className: "content__label" }}
             className="content"
             id="standard-basic"
@@ -57,6 +66,68 @@ export const Footer = () => {
               </li>
             </ul>
             <div className="reason_detail_line"></div>
+          </div>
+        </div>
+      </div>
+      <div className="footer_content_foot">
+        <div className="footer_content_github tab">
+          <h2>Contact</h2>
+          <label>
+            <FontAwesomeIcon icon={faGithub} />
+            <a
+              rel="noreferrer noopener"
+              href="https://github.com/GenjiJapan/Travel-Landing-Page"
+              target="_blank"
+            >
+              Hùng CV
+            </a>
+          </label>
+          <label>
+            <FontAwesomeIcon icon={faGithub} />
+            <a
+              rel="noreferrer noopener"
+              href="https://github.com/GenjiJapan/Travel-Landing-Page"
+              target="_blank"
+            >
+              Nghị CV
+            </a>
+          </label>
+          <label>
+            <FontAwesomeIcon icon={faGithub} />
+            <a
+              rel="noreferrer noopener"
+              href="https://github.com/GenjiJapan/Travel-Landing-Page"
+              target="_blank"
+            >
+              Tuấn CV
+            </a>
+          </label>
+        </div>
+        <div className="footer_content_network tab">
+          <h2>NETWORK</h2>
+          <div className="social_icon">
+            <FontAwesomeIcon className="icon" icon={faTwitter} />
+            <FontAwesomeIcon className="icon" icon={faFacebook} />
+            <FontAwesomeIcon className="icon" icon={faInstagram} />
+            <FontAwesomeIcon className="icon" icon={faYoutube} />
+          </div>
+        </div>
+        <div className="footer_content_stay tab">
+          <h2>STAY IN TOUCH</h2>
+          <p>
+            Subscribe to our newsletter and receive notifications of favoralble
+            offers and news.
+          </p>
+          <p>No spam, just useful information. </p>
+          <div className="email_send">
+            <TextField
+              InputLabelProps={{ className: "emailSend__label" }}
+              size="small"
+              id="outlined-basic"
+              label="Enter your E-mail"
+              variant="outlined"
+            />
+            <button>SEND</button>
           </div>
         </div>
       </div>
