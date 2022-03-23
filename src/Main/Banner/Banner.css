@@ -85,10 +85,10 @@
   position: absolute;
   left: 9.5em;
   bottom: 5em;
-  padding: 0 1em;
   /* width: 130px; */
+  /* padding: 0 0em; */
   width: auto;
-  /* background: #000; */
+  /* background: #000;  */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,7 +102,7 @@
 
 .line {
   margin-left: 0.7em;
-  width: 440px;
+  width: 460px;
   border: 0.3px solid #ccc;
   opacity: 0.3;
 }
@@ -111,7 +111,7 @@
   position: absolute;
   bottom: 2.5em;
   right: 9.5em;
-  width: 648px;
+  width: 640px;
   height: 100px;
   background: rgba(74, 41, 27, 0.25);
   padding: 0 1.5em;

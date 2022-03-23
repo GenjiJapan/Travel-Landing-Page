@@ -6,7 +6,7 @@ import { faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons";
 export const AboutUs = () => {
   return (
     <div className="about_container">
-      <h1>ABOUT US</h1>
+      <h1>ABOUT THIS WEBSITE</h1>
       <div className="about_content">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ullam,

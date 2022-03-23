@@ -1,0 +1,10 @@
+.index_line {
+  position: absolute;
+  left: -50%;
+  top: 1200px;
+  width: 120%;
+  border: 0.2px solid #a18775;
+  opacity: 0.5;
+  transform: rotate(90deg);
+  z-index: -1;
+}

@@ -17,12 +17,12 @@
 
 .reason_title h1 {
   position: absolute;
-  width: 800px;
+  width: 820px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   background: #4a291b;
-  color: #a18775;
+  color: #f5e3cf;
   font-family: "Montserrat", sans-serif;
   white-space: nowrap;
 }
@@ -48,6 +48,10 @@
   width: 300px;
   height: 500px;
   /* background: #fff; */
+}
+
+.reason_detail h1 {
+  color: #f5e3cf;
 }
 
 .reason_detail ul {
@@ -105,5 +109,3 @@
   color: #fff;
   font-weight: 700;
 }
-
-

@@ -15,7 +15,7 @@ export const Banner = () => {
       <div className="banner_content">
         <div className="place_describe">
           <p>Between Heaven and Earth</p>
-          <h1>CAPPADOCIA</h1>
+          <h1>TOURADS</h1>
           <button>BOOK A TOUR</button>
         </div>
       </div>

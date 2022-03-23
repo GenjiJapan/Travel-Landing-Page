@@ -71,12 +71,12 @@ export const Footer = () => {
       </div>
       <div className="footer_content_foot">
         <div className="footer_content_github tab">
-          <h2>Contact</h2>
+          <h2>Hire us</h2>
           <label>
             <FontAwesomeIcon icon={faGithub} />
             <a
               rel="noreferrer noopener"
-              href="https://github.com/GenjiJapan/Travel-Landing-Page"
+              href="https://leander-25.github.io/"
               target="_blank"
             >
               Hùng CV
@@ -86,7 +86,7 @@ export const Footer = () => {
             <FontAwesomeIcon icon={faGithub} />
             <a
               rel="noreferrer noopener"
-              href="https://github.com/GenjiJapan/Travel-Landing-Page"
+              href="https://kendumboiz.github.io/ducnghi/"
               target="_blank"
             >
               Nghị CV
@@ -96,7 +96,7 @@ export const Footer = () => {
             <FontAwesomeIcon icon={faGithub} />
             <a
               rel="noreferrer noopener"
-              href="https://github.com/GenjiJapan/Travel-Landing-Page"
+              href="https://vantuan-01.github.io/"
               target="_blank"
             >
               Tuấn CV
