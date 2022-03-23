@@ -14,7 +14,7 @@ export const Banner = () => {
       <div className="banner_overlay_left"></div>
       <div className="banner_content">
         <div className="place_describe">
-          <p>Between Heaven and Earth</p>
+          <p>Our Landing Page</p>
           <h1>TOURADS</h1>
           <button>BOOK A TOUR</button>
         </div>

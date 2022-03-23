@@ -135,6 +135,7 @@
   padding: 1em;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  /* background: #000; */
   /* border: 0.2px solid rgba(161, 135, 117, 0.25); */
   text-align: center;
   margin: 0 2em;
@@ -167,6 +168,21 @@
   margin-bottom: 1em;
 }
 
+.tab .footer_content_cv{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  bottom: 1.2em;
+  width: 100%;
+  height: auto;
+  /* background: pink; */
+}
+
+.tab .footer_content_cv label{
+  /* background: #000; */
+  margin-bottom: 1em;
+}
+
 .footer_content_foot .tab .social_icon {
   display: flex;
   justify-content: space-between;
@@ -174,7 +190,7 @@
   width: 100%;
   /* background: pink; */
   color: #a18775;
-  padding: 0 1em;
+  /* padding: 0 1em; */
 }
 
 .footer_content_foot .tab button {

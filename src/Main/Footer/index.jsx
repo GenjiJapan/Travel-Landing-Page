@@ -72,36 +72,38 @@ export const Footer = () => {
       <div className="footer_content_foot">
         <div className="footer_content_github tab">
           <h2>Hire us</h2>
-          <label>
-            <FontAwesomeIcon icon={faGithub} />
-            <a
-              rel="noreferrer noopener"
-              href="https://leander-25.github.io/"
-              target="_blank"
-            >
-              Hùng CV
-            </a>
-          </label>
-          <label>
-            <FontAwesomeIcon icon={faGithub} />
-            <a
-              rel="noreferrer noopener"
-              href="https://kendumboiz.github.io/ducnghi/"
-              target="_blank"
-            >
-              Nghị CV
-            </a>
-          </label>
-          <label>
-            <FontAwesomeIcon icon={faGithub} />
-            <a
-              rel="noreferrer noopener"
-              href="https://vantuan-01.github.io/"
-              target="_blank"
-            >
-              Tuấn CV
-            </a>
-          </label>
+          <div className="footer_content_cv">
+            <label>
+              <FontAwesomeIcon color="#a18775" icon={faGithub} />
+              <a
+                rel="noreferrer noopener"
+                href="https://leander-25.github.io/"
+                target="_blank"
+              >
+                Hùng CV
+              </a>
+            </label>
+            <label>
+              <FontAwesomeIcon color="#a18775" icon={faGithub} />
+              <a
+                rel="noreferrer noopener"
+                href="https://kendumboiz.github.io/ducnghi/"
+                target="_blank"
+              >
+                Nghị CV
+              </a>
+            </label>
+            <label>
+              <FontAwesomeIcon color="#a18775" icon={faGithub} />
+              <a
+                rel="noreferrer noopener"
+                href="https://vantuan-01.github.io/"
+                target="_blank"
+              >
+                Tuấn CV
+              </a>
+            </label>
+          </div>
         </div>
         <div className="footer_content_network tab">
           <h2>NETWORK</h2>
