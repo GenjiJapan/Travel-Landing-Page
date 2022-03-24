@@ -70,19 +70,6 @@ export const photoArr = [
     img: palais,
     content: "Ticket",
   },
-  // {
-  //   id: 6,
-  //   img: thailan,
-  // },
-
-  // {
-  //   id: 7,
-  //   img: cappadocia,
-  // },
-  // {
-  //   id: 8,
-  //   img: cappadocia2,
-  // },
 ];
 
 export const Images = {

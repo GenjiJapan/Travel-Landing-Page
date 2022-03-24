@@ -13,7 +13,7 @@ export const Reason = () => {
       <div className="reason_content">
         <div className="reason_detail">
           <div className="reason_detail_line"></div>
-          <h1>TRIP OF YOUR DREAM</h1>
+          <h1>Detail</h1>
           <ul>
             <li>
               <FontAwesomeIcon className="circle_icon" icon={faCircle} />
@@ -38,8 +38,6 @@ export const Reason = () => {
           </ul>
           <button>BOOK A TOUR</button>
         </div>
-        {/* <div className="reason_img_slide">
-        </div> */}
         <ImageSlider />
       </div>
     </div>

@@ -1,10 +1,14 @@
 .photo_container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 90%;
   height: 500px;
-  margin: 5em auto 5em auto;
-  /* background: #fff; */
+  margin: 1em auto 5em auto;
   font-family: sans-serif;
+  /* background: #fff; */
   /* padding: 0 2em; */
   padding-top: 2em;
 }
@@ -24,7 +28,7 @@
   justify-content: center;
   align-items: flex-start;
   margin-top: 3rem;
-  margin-bottom: 20em;
+  /* margin-bottom: 20em; */
 }
 
 .title {
@@ -77,12 +81,24 @@
 }
 
 .secondary {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   background-color: white;
   height: 2.5rem;
-  padding: 0.5rem;
-  justify-content: center;
+  padding: 0.5rem 2.3rem 0.5rem 2.3rem;
   width: 10rem;
-  margin: 0 5rem;
+  margin: 0 6rem;
+}
+
+.third{
+  background-color: white;
+  height: 2.5rem;
+  padding: 0.5rem ;
+  width: 10rem;
+  justify-content: center;
+
+  margin: 0 6rem;
 }
 
 .compact {

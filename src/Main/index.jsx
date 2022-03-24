@@ -1,14 +1,11 @@
 import React from "react";
-import { AboutUs } from "./AboutUs";
+import { Assignments } from "./Assignments";
 import { Banner } from "./Banner";
-import { Data } from "./Data";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import "./Index.css";
 import { Photos } from "./Photo";
 import { Reason } from "./Reason";
-import SmoothScroll from "./SmoothScroll";
-import { WhyUs } from "./WhyChoose";
 
 export const Index = () => {
   return (
@@ -17,11 +14,11 @@ export const Index = () => {
       <Header />
       <Banner />
       <Reason />
-      <AboutUs />
-      <Data />
-      <WhyUs />
+      {/* <AboutUs /> */}
+      {/* <Data /> */}
+      <Assignments />
       <Photos />
-      {/* <Footer /> */}
+      <Footer />
       {/* <SmoothScroll>
       </SmoothScroll> */}
     </div>

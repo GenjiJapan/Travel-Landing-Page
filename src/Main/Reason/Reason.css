@@ -9,7 +9,7 @@
   position: relative;
   border-top: 1px solid #a18775;
   width: 100%;
-  background: #fff;
+  /* background: #fff; */
   margin-top: 3em;
   text-align: center;
   padding: 0 1em;
@@ -41,6 +41,10 @@
 
 .reason_detail {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   top: 50%;
   transform: translateY(-50%);
   margin-left: 4em;
@@ -50,9 +54,7 @@
   /* background: #fff; */
 }
 
-.reason_detail h1 {
-  color: #f5e3cf;
-}
+
 
 .reason_detail ul {
   padding-top: 1em;
@@ -80,7 +82,7 @@
 
 .reason_detail .reason_detail_line {
   position: absolute;
-  top: 12em;
+  top: 13em;
   left: -5.75em;
   width: 200px;
   border: 0.2px solid #a18775;
@@ -90,15 +92,17 @@
 
 .reason_detail h1 {
   padding-top: 1em;
-  padding-left: 1em;
+  padding-right: 4.5em;
+  text-align: left;
   font-size: 1.8em;
-  font-family: "Montserrat", sans-serif;
-  color: #a18775;
+  font-family: "Krona One", sans-serif;
+  color: #f5e3cf;
+
 }
 
 .reason_detail button {
   margin-top: 5em;
-  margin-left: 2em;
+  /* margin-left: 2em; */
   width: 250px;
   height: 50px;
   background: #f45713;

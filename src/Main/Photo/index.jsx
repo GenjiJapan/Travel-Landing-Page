@@ -32,18 +32,18 @@ function ExpandedCVCard({ id, content, children, onCollapse }) {
       >
         {children}
       </motion.div>
-      <motion.p
+      <motion.a
+        target="_blank"
+        href={content}
         className="card expanded secondary"
         onClick={onCollapse}
         transition={{ delay: 0.3 }}
         initial={{ opacity: 0, top: "6rem" }}
         animate={{ opacity: 1, top: "3rem" }}
       >
-        <motion.a target="_blank" href={content}>
-          <FontAwesomeIcon icon={faGithub} />
-          {handleSetName()}
-        </motion.a>
-      </motion.p>
+        <FontAwesomeIcon className="github_icon" icon={faGithub} />
+        {handleSetName()}
+      </motion.a>
     </>
   );
 }
@@ -64,7 +64,7 @@ function ExpandedFeatureCard({ id, content, children, onCollapse }) {
         {children}
       </motion.div>
       <motion.p
-        className="card expanded secondary"
+        className="card expanded third"
         onClick={onCollapse}
         transition={{ delay: 0.3 }}
         initial={{ opacity: 0, top: "6rem" }}

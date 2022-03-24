@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const WhyUs = () => {
+export const Assignments = () => {
   return (
     <div className="why_container">
       <div className="why_title">
