@@ -1,20 +1,10 @@
-import {
-  faFacebook,
-  faGithub,
-  faInstagram,
-  faTwitter,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
-import { faCircle } from "@fortawesome/free-regular-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { TextField } from "@mui/material";
 import React from "react";
 import "./Footer.css";
 
 export const Footer = () => {
   return (
     <footer className="footer_container">
-      <div className="footer_content_head">
+      {/* <div className="footer_content_head">
         <div className="footer_feedback">
           <h3 className="content">
             Please leave your feedback to our project for better services
@@ -132,7 +122,7 @@ export const Footer = () => {
             <button>SEND</button>
           </div>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 };

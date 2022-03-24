@@ -36,7 +36,7 @@ body {
   width: 100%;
   background: #4a291b;
   scroll-behavior: smooth;
-  /* overscroll-behavior-y: none; */
+  overflow-x: hidden ;
 }
 
 a{

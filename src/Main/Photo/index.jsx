@@ -7,21 +7,33 @@ import "./Photos.css";
 
 function Content({ img, disabled }) {
   return (
-    <motion.h1
+    <motion.div
       className="title"
       layoutId="title"
       style={{ opacity: disabled ? 0.2 : 1 }}
     >
       <motion.img className="title_img" src={img} alt="" />
-    </motion.h1>
+    </motion.div>
+  );
+}
+
+function PageContent({ img, disabled }) {
+  return (
+    <motion.div
+      className="title-page"
+      layoutId="title"
+      style={{ opacity: disabled ? 0.2 : 1 }}
+    >
+      <motion.img className="title-img-page" src={img} alt="" />
+    </motion.div>
   );
 }
 
 function ExpandedCVCard({ id, content, children, onCollapse }) {
   const handleSetName = () => {
-    if (id === 1) return "Hùng CV";
-    if (id === 2) return "Tuấn CV";
-    if (id === 3) return "Nghị CV";
+    if (id === 1) return "Hùng ";
+    if (id === 2) return "Tuấn ";
+    if (id === 3) return "Nghị ";
   };
   return (
     <>
@@ -48,7 +60,7 @@ function ExpandedCVCard({ id, content, children, onCollapse }) {
   );
 }
 
-function ExpandedFeatureCard({ id, content, children, onCollapse }) {
+function ExpandedPageCard({ id, content, children, onCollapse }) {
   // const handleSetName = () => {
   //   if (id === 1) return "Hùng CV";
   //   if (id === 2) return "Tuấn CV";
@@ -57,7 +69,7 @@ function ExpandedFeatureCard({ id, content, children, onCollapse }) {
   return (
     <>
       <motion.div
-        className="card expanded"
+        className="card expanded expanded-page-card"
         layoutId="expandable-card"
         onClick={onCollapse}
       >
@@ -80,6 +92,18 @@ function CompactCard({ children, onExpand, disabled }) {
   return (
     <motion.div
       className="card compact"
+      layoutId="expandable-card"
+      onClick={disabled ? undefined : onExpand}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+function CompactPageCard({ children, onExpand, disabled }) {
+  return (
+    <motion.div
+      className="card compact page_compact"
       layoutId="expandable-card"
       onClick={disabled ? undefined : onExpand}
     >
@@ -123,7 +147,7 @@ function DateButton({ id, img, content, onCollapse, onExpand, disabled }) {
   );
 }
 
-function FeatureButton({ img, content, onCollapse, onExpand, disabled }) {
+function PageButton({ img, content, onCollapse, onExpand, disabled }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const collapseDate = () => {
@@ -137,20 +161,20 @@ function FeatureButton({ img, content, onCollapse, onExpand, disabled }) {
   };
 
   return (
-    <div className="card-container">
+    <div className="card-container page-card-container">
       <AnimateSharedLayout>
         {isExpanded ? (
-          <ExpandedFeatureCard
+          <ExpandedPageCard
             onCollapse={collapseDate}
             img={img}
             content={content}
           >
-            <Content img={img} disabled={disabled} content={content} />
-          </ExpandedFeatureCard>
+            <PageContent img={img} disabled={disabled} content={content} />
+          </ExpandedPageCard>
         ) : (
-          <CompactCard onExpand={expandDate} disabled={disabled} img={img}>
-            <Content img={img} disabled={disabled} />
-          </CompactCard>
+          <CompactPageCard onExpand={expandDate} disabled={disabled} img={img}>
+            <PageContent img={img} disabled={disabled} />
+          </CompactPageCard>
         )}
       </AnimateSharedLayout>
     </div>
@@ -173,7 +197,7 @@ export const Photos = () => {
   }, [avtArr, avtList]);
   return (
     <div>
-      <div className="photo_container">
+      <div className="photo_container avt">
         <h1>Our CV</h1>
         <div className="dates">
           {avtList.map((img) => (
@@ -189,11 +213,11 @@ export const Photos = () => {
           ))}
         </div>
       </div>
-      <div className="photo_container">
-        <h1>Photo Impression</h1>
+      <div className="photo_container feature">
+        <h1>Another Pages</h1>
         <div className="dates">
           {uiList.map((img) => (
-            <FeatureButton
+            <PageButton
               key={img}
               img={img.img}
               content={img.content}

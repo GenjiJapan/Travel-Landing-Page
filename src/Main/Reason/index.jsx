@@ -7,9 +7,9 @@ import { ImageSlider } from "../ImageSlider";
 export const Reason = () => {
   return (
     <div className="reason_container">
-      <div className="reason_title">
+      {/* <div className="reason_title">
         <h1>5 REASONS WHY YOU SHOULD VISIT CAPPADOCIA</h1>
-      </div>
+      </div> */}
       <div className="reason_content">
         <div className="reason_detail">
           <div className="reason_detail_line"></div>
@@ -25,7 +25,10 @@ export const Reason = () => {
             </li>
             <li>
               <FontAwesomeIcon className="circle_icon" icon={faCircle} />
-              <p>Main features: Search, Book tour, Review, Manage tour</p>
+              <p>
+                Main features: Search, Book tour, Review, Manage tour, Login,
+                Register
+              </p>
             </li>
             {/* <li>
               <FontAwesomeIcon className="circle_icon" icon={faCircle} />

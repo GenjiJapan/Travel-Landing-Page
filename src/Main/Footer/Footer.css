@@ -4,10 +4,11 @@
   top: 3em;
   margin: 0 auto;
   width: 90%;
-  height: auto;
+  height: 300px;
   border-radius: 10px;
-  background: #4a291b;
-  box-shadow: 10px 10px 20px #3f2317, -10px -10px 20px #552f1f;
+  /* background: #4a291b; */
+  background: transparent;
+  /* box-shadow: 10px 10px 20px #3f2317, -10px -10px 20px #552f1f; */
 }
 
 .footer_content_head {

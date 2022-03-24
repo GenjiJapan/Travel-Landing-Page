@@ -1,12 +1,6 @@
 import React from "react";
+import { Images } from "../../constants/images";
 import "./Why.css";
-import {
-  faCar,
-  faGolfBall,
-  faHandsHelping,
-  faWarehouse,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Assignments = () => {
   return (
@@ -16,28 +10,22 @@ export const Assignments = () => {
       </div>
       <div className="why_content">
         <div className="why_content_child">
-          <FontAwesomeIcon size="3x" color="#f5e3cf" icon={faHandsHelping} />
+          <img src={Images.BACKEND} alt="" />
           <h1>Phùng Quốc Hùng</h1>
-          <p>
-            It's importance for us to maximize your impression by an individual
-            caring approach
-          </p>
+          <p>Design Database, Core, Backend, UI, analysis requirement.</p>
         </div>
         <div className="why_content_child">
-          <FontAwesomeIcon size="3x" color="#f5e3cf" icon={faGolfBall} />
+          <img src={Images.FRONTENDDESIGN} alt="" />
 
           <h1>Phạm Anh Tuấn</h1>
-          <p>
-            We pave routes for you across the most picturesque places in
-            Cappadocia
-          </p>
+          <p>Design and implement UI, analysis requirement.</p>
         </div>
         <div className="why_content_child">
-          <FontAwesomeIcon size="3x" color="#f5e3cf" icon={faWarehouse} />
+          <img src={Images.FRONTENDLOGIC} alt="" />
           <h1>Lê Đức Nghị</h1>
           <p>
-            You have a wonderfull chance to spend 4 days in the authentic Cave
-            hotel with a spellbinding view
+            Handle logic, functionals, requests and response from API, analysis
+            requirement.
           </p>
         </div>
       </div>
