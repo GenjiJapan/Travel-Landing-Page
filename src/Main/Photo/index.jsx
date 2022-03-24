@@ -1,3 +1,5 @@
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { AnimateSharedLayout, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { avtArr, photoArr } from "../../constants/images";
@@ -15,7 +17,12 @@ function Content({ img, disabled }) {
   );
 }
 
-function ExpandedCard({ children, onCollapse }) {
+function ExpandedCVCard({ id, content, children, onCollapse }) {
+  const handleSetName = () => {
+    if (id === 1) return "Hùng CV";
+    if (id === 2) return "Tuấn CV";
+    if (id === 3) return "Nghị CV";
+  };
   return (
     <>
       <motion.div
@@ -32,7 +39,38 @@ function ExpandedCard({ children, onCollapse }) {
         initial={{ opacity: 0, top: "6rem" }}
         animate={{ opacity: 1, top: "3rem" }}
       >
-        Detail Page Page Page
+        <motion.a target="_blank" href={content}>
+          <FontAwesomeIcon icon={faGithub} />
+          {handleSetName()}
+        </motion.a>
+      </motion.p>
+    </>
+  );
+}
+
+function ExpandedFeatureCard({ id, content, children, onCollapse }) {
+  // const handleSetName = () => {
+  //   if (id === 1) return "Hùng CV";
+  //   if (id === 2) return "Tuấn CV";
+  //   if (id === 3) return "Nghị CV";
+  // };
+  return (
+    <>
+      <motion.div
+        className="card expanded"
+        layoutId="expandable-card"
+        onClick={onCollapse}
+      >
+        {children}
+      </motion.div>
+      <motion.p
+        className="card expanded secondary"
+        onClick={onCollapse}
+        transition={{ delay: 0.3 }}
+        initial={{ opacity: 0, top: "6rem" }}
+        animate={{ opacity: 1, top: "3rem" }}
+      >
+        {content}
       </motion.p>
     </>
   );
@@ -50,7 +88,7 @@ function CompactCard({ children, onExpand, disabled }) {
   );
 }
 
-function DateButton({ img, onCollapse, onExpand, disabled }) {
+function DateButton({ id, img, content, onCollapse, onExpand, disabled }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const collapseDate = () => {
@@ -67,9 +105,48 @@ function DateButton({ img, onCollapse, onExpand, disabled }) {
     <div className="card-container">
       <AnimateSharedLayout>
         {isExpanded ? (
-          <ExpandedCard onCollapse={collapseDate} img={img}>
+          <ExpandedCVCard
+            onCollapse={collapseDate}
+            img={img}
+            content={content}
+            id={id}
+          >
+            <Content img={img} disabled={disabled} content={content} />
+          </ExpandedCVCard>
+        ) : (
+          <CompactCard onExpand={expandDate} disabled={disabled} img={img}>
             <Content img={img} disabled={disabled} />
-          </ExpandedCard>
+          </CompactCard>
+        )}
+      </AnimateSharedLayout>
+    </div>
+  );
+}
+
+function FeatureButton({ img, content, onCollapse, onExpand, disabled }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const collapseDate = () => {
+    setIsExpanded(false);
+    onCollapse();
+  };
+
+  const expandDate = () => {
+    setIsExpanded(true);
+    onExpand();
+  };
+
+  return (
+    <div className="card-container">
+      <AnimateSharedLayout>
+        {isExpanded ? (
+          <ExpandedFeatureCard
+            onCollapse={collapseDate}
+            img={img}
+            content={content}
+          >
+            <Content img={img} disabled={disabled} content={content} />
+          </ExpandedFeatureCard>
         ) : (
           <CompactCard onExpand={expandDate} disabled={disabled} img={img}>
             <Content img={img} disabled={disabled} />
@@ -96,23 +173,28 @@ export const Photos = () => {
   }, [avtArr, avtList]);
   return (
     <div className="photo_container">
-      <h1>Photo Impression</h1>
+      <h1>Our CV</h1>
       <div className="dates">
         {avtList.map((img) => (
           <DateButton
             key={img}
             img={img.img}
+            content={img.link}
+            id={img.id}
             disabled={expandedDay !== img && expandedDay !== undefined}
             onExpand={() => setCollapsedDay(img)}
             onCollapse={() => setCollapsedDay()}
           />
         ))}
       </div>
+
+      <h1>Photo Impression</h1>
       <div className="dates">
         {uiList.map((img) => (
-          <DateButton
+          <FeatureButton
             key={img}
             img={img.img}
+            content={img.content}
             disabled={expandedDay !== img && expandedDay !== undefined}
             onExpand={() => setCollapsedDay(img)}
             onCollapse={() => setCollapsedDay()}

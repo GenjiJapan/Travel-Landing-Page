@@ -31,15 +31,21 @@ export default [
 export const avtArr = [
   {
     id: 1,
+    name: "Hùng",
     img: hung,
+    link: "https://leander-25.github.io/",
   },
   {
     id: 2,
+    name: "Tuấn",
     img: tuan,
+    link: "https://vantuan-01.github.io/",
   },
   {
     id: 3,
+    name: "Tuấn",
     img: nghi,
+    link: "https://kendumboiz.github.io/ducnghi/",
   },
 ];
 
@@ -47,22 +53,27 @@ export const photoArr = [
   {
     id: 1,
     img: london,
+    content: "Home page",
   },
   {
     id: 2,
     img: lourve,
+    content: "Detail page",
   },
   {
     id: 3,
     img: lourve2,
+    content: "Post-tour page",
   },
   {
     id: 4,
     img: muine,
+    content: "Admin page",
   },
   {
     id: 5,
     img: palais,
+    content: "Ticket",
   },
   // {
   //   id: 6,

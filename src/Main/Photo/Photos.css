@@ -1,7 +1,7 @@
 .photo_container {
   position: relative;
   width: 90%;
-  height: 550px;
+  height: auto;
   margin: 5em auto 5em auto;
   /* background: #fff; */
   font-family: sans-serif;
@@ -73,6 +73,7 @@
   position: relative;
   left: -100%;
   top: 150%;
+  z-index: 1;
 }
 
 .secondary {
