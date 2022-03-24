@@ -17,27 +17,24 @@ export const Reason = () => {
           <ul>
             <li>
               <FontAwesomeIcon className="circle_icon" icon={faCircle} />
-              <p>5 days and 4 nights in a hotel with a magical atmosphere</p>
+              <p>Techs : RESTful API, Laravel 8, MySQL, ReactJS, HTML/CSS</p>
             </li>
             <li>
               <FontAwesomeIcon className="circle_icon" icon={faCircle} />
-              <p>
-                Hot air balloon flight at dawn + Photoshoot. Riding an ATV in
-                the desert
-              </p>
+              <p>Roles: Customer, Organization and Admin</p>
             </li>
             <li>
               <FontAwesomeIcon className="circle_icon" icon={faCircle} />
-              <p>3 cities : Istanbul, Nevsehir, Goreme</p>
+              <p>Main features: Search, Book tour, Review, Manage tour</p>
             </li>
-            <li>
+            {/* <li>
               <FontAwesomeIcon className="circle_icon" icon={faCircle} />
               <p>Round-trip tickets + transfer to the hotel</p>
             </li>
             <li>
               <FontAwesomeIcon className="circle_icon" icon={faCircle} />
               <p>1100$ for two</p>
-            </li>
+            </li> */}
           </ul>
           <button>BOOK A TOUR</button>
         </div>

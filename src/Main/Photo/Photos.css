@@ -2,7 +2,7 @@
   position: relative;
   width: 90%;
   height: 550px;
-  margin: 5em auto 0 auto;
+  margin: 5em auto 5em auto;
   /* background: #fff; */
   font-family: sans-serif;
   /* padding: 0 2em; */
@@ -24,6 +24,7 @@
   justify-content: center;
   align-items: flex-start;
   margin-top: 3rem;
+  margin-bottom: 20em;
 }
 
 .title {
@@ -101,3 +102,4 @@
 .compact .title {
   font-size: 1.5em;
 }
+

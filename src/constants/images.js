@@ -10,15 +10,37 @@ import thailan from "../assets/Images/thailan.jpg";
 import vinhhalong from "../assets/Images/vinhhalong.jpg";
 import vungtau from "../assets/Images/vungtau.jpg";
 
+import techs from "../assets/Images/Frame_59_1.png";
+import roles from "../assets/Images/Frame 60.png";
+
+import hung from "../assets/Images/hung-avt.jpg";
+import tuan from "../assets/Images/tuan-avt.jpg";
+import nghi from "../assets/Images/nghi-avt.jpg";
+
 export default [
-  london,
-  lourve,
+  techs,
+  roles,
   lourve2,
   muine,
   palais,
   thailan,
   vinhhalong,
   vungtau,
+];
+
+export const avtArr = [
+  {
+    id: 1,
+    img: hung,
+  },
+  {
+    id: 2,
+    img: tuan,
+  },
+  {
+    id: 3,
+    img: nghi,
+  },
 ];
 
 export const photoArr = [

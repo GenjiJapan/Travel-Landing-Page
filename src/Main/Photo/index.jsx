@@ -1,6 +1,6 @@
 import { AnimateSharedLayout, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import { photoArr } from "../../constants/images";
+import { avtArr, photoArr } from "../../constants/images";
 import "./Photos.css";
 
 function Content({ img, disabled }) {
@@ -82,17 +82,34 @@ function DateButton({ img, onCollapse, onExpand, disabled }) {
 
 export const Photos = () => {
   const [expandedDay, setCollapsedDay] = useState();
-  const [imgList, setImgList] = useState([]);
+  const [uiList, setUiList] = useState([]);
+  const [avtList, setAvtList] = useState([]);
 
   useEffect(() => {
-    setImgList(photoArr);
-    console.log("🚀 ~ file: index.jsx ~ line 7 ~ Photos ~ imgList", imgList);
-  }, [photoArr, imgList]);
+    setUiList(photoArr);
+    // console.log("🚀 ~ file: index.jsx ~ line 7 ~ Photos ~ imgList", imgList);
+  }, [photoArr, uiList]);
+
+  useEffect(() => {
+    setAvtList(avtArr);
+    // console.log("🚀 ~ file: index.jsx ~ line 7 ~ Photos ~ imgList", imgList);
+  }, [avtArr, avtList]);
   return (
     <div className="photo_container">
       <h1>Photo Impression</h1>
       <div className="dates">
-        {imgList.map((img) => (
+        {avtList.map((img) => (
+          <DateButton
+            key={img}
+            img={img.img}
+            disabled={expandedDay !== img && expandedDay !== undefined}
+            onExpand={() => setCollapsedDay(img)}
+            onCollapse={() => setCollapsedDay()}
+          />
+        ))}
+      </div>
+      <div className="dates">
+        {uiList.map((img) => (
           <DateButton
             key={img}
             img={img.img}

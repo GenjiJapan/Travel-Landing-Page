@@ -80,9 +80,9 @@
 
 .reason_detail .reason_detail_line {
   position: absolute;
-  top: 15em;
-  left: -8.85em;
-  width: 300px;
+  top: 12em;
+  left: -5.75em;
+  width: 200px;
   border: 0.2px solid #a18775;
   transform: rotate(90deg);
   opacity: 0.5;

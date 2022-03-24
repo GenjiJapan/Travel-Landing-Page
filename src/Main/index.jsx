@@ -21,7 +21,7 @@ export const Index = () => {
       <Data />
       <WhyUs />
       <Photos />
-      <Footer />
+      {/* <Footer /> */}
       {/* <SmoothScroll>
       </SmoothScroll> */}
     </div>
