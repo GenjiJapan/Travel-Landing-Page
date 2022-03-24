@@ -172,34 +172,37 @@ export const Photos = () => {
     // console.log("🚀 ~ file: index.jsx ~ line 7 ~ Photos ~ imgList", imgList);
   }, [avtArr, avtList]);
   return (
-    <div className="photo_container">
-      <h1>Our CV</h1>
-      <div className="dates">
-        {avtList.map((img) => (
-          <DateButton
-            key={img}
-            img={img.img}
-            content={img.link}
-            id={img.id}
-            disabled={expandedDay !== img && expandedDay !== undefined}
-            onExpand={() => setCollapsedDay(img)}
-            onCollapse={() => setCollapsedDay()}
-          />
-        ))}
+    <div>
+      <div className="photo_container">
+        <h1>Our CV</h1>
+        <div className="dates">
+          {avtList.map((img) => (
+            <DateButton
+              key={img}
+              img={img.img}
+              content={img.link}
+              id={img.id}
+              disabled={expandedDay !== img && expandedDay !== undefined}
+              onExpand={() => setCollapsedDay(img)}
+              onCollapse={() => setCollapsedDay()}
+            />
+          ))}
+        </div>
       </div>
-
-      <h1>Photo Impression</h1>
-      <div className="dates">
-        {uiList.map((img) => (
-          <FeatureButton
-            key={img}
-            img={img.img}
-            content={img.content}
-            disabled={expandedDay !== img && expandedDay !== undefined}
-            onExpand={() => setCollapsedDay(img)}
-            onCollapse={() => setCollapsedDay()}
-          />
-        ))}
+      <div className="photo_container">
+        <h1>Photo Impression</h1>
+        <div className="dates">
+          {uiList.map((img) => (
+            <FeatureButton
+              key={img}
+              img={img.img}
+              content={img.content}
+              disabled={expandedDay !== img && expandedDay !== undefined}
+              onExpand={() => setCollapsedDay(img)}
+              onCollapse={() => setCollapsedDay()}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

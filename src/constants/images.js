@@ -12,21 +12,16 @@ import vungtau from "../assets/Images/vungtau.jpg";
 
 import techs from "../assets/Images/Frame_59_1.png";
 import roles from "../assets/Images/Frame 60.png";
+import loginUI from "../assets/Images/Frame 61.png";
+import manageTour from "../assets/Images/Frame 62.png";
+import review from "../assets/Images/Frame 63.png";
+import search from "../assets/Images/Frame 64.png";
 
 import hung from "../assets/Images/hung-avt.jpg";
 import tuan from "../assets/Images/tuan-avt.jpg";
 import nghi from "../assets/Images/nghi-avt.jpg";
 
-export default [
-  techs,
-  roles,
-  lourve2,
-  muine,
-  palais,
-  thailan,
-  vinhhalong,
-  vungtau,
-];
+export default [techs, roles, search, review, manageTour, loginUI];
 
 export const avtArr = [
   {
