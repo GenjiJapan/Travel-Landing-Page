@@ -15,10 +15,10 @@ export const Header = () => {
         <img src={Images.LOGO} alt="" />
       </div>
       <ul className="header_indicator">
-        <li>INFO</li>
-        <li>ABOUT US</li>
-        <li> PHOTO</li>
-        <li>CONTACTS</li>
+        <li>DETAIL</li>
+        <li>ASSIGNMENTS</li>
+        <li>CV</li>
+        <li>PAGES</li>
       </ul>
       <ul className="brand_indicator">
         <li>

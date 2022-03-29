@@ -1,3 +1,6 @@
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { TextField } from "@mui/material";
 import React from "react";
 import "./Footer.css";
 

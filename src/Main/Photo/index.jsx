@@ -31,9 +31,9 @@ function PageContent({ img, disabled }) {
 
 function ExpandedCVCard({ id, content, children, onCollapse }) {
   const handleSetName = () => {
-    if (id === 1) return "Hùng ";
-    if (id === 2) return "Tuấn ";
-    if (id === 3) return "Nghị ";
+    if (id === 1) return "Quốc Hùng ";
+    if (id === 2) return "Anh Tuấn ";
+    if (id === 3) return "Đức Nghị ";
   };
   return (
     <>

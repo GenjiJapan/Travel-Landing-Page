@@ -30,16 +30,14 @@ export const Reason = () => {
                 Register
               </p>
             </li>
-            {/* <li>
-              <FontAwesomeIcon className="circle_icon" icon={faCircle} />
-              <p>Round-trip tickets + transfer to the hotel</p>
-            </li>
-            <li>
-              <FontAwesomeIcon className="circle_icon" icon={faCircle} />
-              <p>1100$ for two</p>
-            </li> */}
           </ul>
-          <button>BOOK A TOUR</button>
+          <a
+            rel="noopener noreferrer"
+            href="http://localhost:3001/home"
+            target="_blank"
+          >
+            BOOK A TOUR
+          </a>
         </div>
         <ImageSlider />
       </div>

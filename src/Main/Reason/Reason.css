@@ -100,9 +100,11 @@
 
 }
 
-.reason_detail button {
+.reason_detail a {
   margin-top: 5em;
-  /* margin-left: 2em; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 250px;
   height: 50px;
   background: #f45713;

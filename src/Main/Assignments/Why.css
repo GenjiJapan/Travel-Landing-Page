@@ -1,3 +1,4 @@
+
 .why_container {
   position: relative;
   /* display: flex; */
@@ -50,30 +51,27 @@
   width: 180px;
   height: 250px;
   padding: 1em;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-family: 'Lato', sans-serif;
   border: 0.2px solid rgba(161, 135, 117, 0.25);
   text-align: center;
-  /* color: #f5e3cf; */
-  /* font-size: 6em; */
-  /* background: #000; */
-  /* opacity: 0.5; */
+  background: #fff;
 }
 
 .why_content_child h1 {
-  color: #f3e0d0;
+  color: rgb(132, 75, 37);
   margin-top: 0.8em;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .why_content_child img{
   width: 60px;
   height: 50px;
-  /* background: #fff; */
 }
 
 .why_content_child p {
   margin-top: 0.5em;
-  color: #ae947f;
+  color: rgb(100, 61, 24);
   font-size: 1em;
+  font-weight: 600;
+
 }

@@ -11,7 +11,7 @@ export const Assignments = () => {
       <div className="why_content">
         <div className="why_content_child">
           <img src={Images.BACKEND} alt="" />
-          <h1>Phùng Quốc Hùng</h1>
+          <h1>Phùng Hùng</h1>
           <p>Design Database, Core, Backend, UI, analysis requirement.</p>
         </div>
         <div className="why_content_child">
